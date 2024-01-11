@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_flutter/widgets/material_banner.dart';
+import 'package:widgets_flutter/widgets/preferred_size.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,14 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: ThemeData.light().colorScheme.inversePrimary,
-          leading: const Icon(Icons.ac_unit_sharp),
-          title: const Text('Widget Maps'),
-        ),
-        body: const MaterialBannerExample(),
-      ),
+      home: const PreferredSizeExample(),
     );
   }
 }
