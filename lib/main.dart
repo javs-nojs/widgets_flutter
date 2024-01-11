@@ -16,7 +16,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Example(),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: ThemeData.light().colorScheme.inversePrimary,
+          leading: const Icon(Icons.ac_unit_sharp),
+          title: const Text('Widget Maps'),
+        ),
+        body: const MaterialBannerExample(),
+      ),
     );
   }
 }
